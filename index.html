@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="#"  >
+    <form action="https://formspree.io/f/xjkgeqwy" method="POST">
         <div class="nombre">
             <h1>Formulario de contacto</h1>
             <label>Nombre
-                <input type="text" placeholder="Joshua Moll">
+                <input type="text" placeholder="Joshua Moll" name="Nombre" required>
             </label>
         </div>
         <div class="email" >
             <label>Email
-                <input type="email" placeholder="example@gmail.com" autocomplete="new-password">
+                <input type="email" placeholder="example@gmail.com" autocomplete="new-password" name="Email" required>
             </label>
         </div>
         <div>
             <label>PQRS
-                <textarea class="textarea" placeholder="Descripcion de asunto..."></textarea>
+                <textarea class="textarea" placeholder="Descripcion de asunto..." name="PQRS" required></textarea>
             </label>
-        </di
+        </div>
         <div>
-            <a href="#" rel="noopener noreferrer"><input type="button" value="ENVIAR" class="botonEnviar"></a>
+            <input type="submit" value="ENVIAR" class="botonEnviar">
         </div>
     </form> 
 </body>
