@@ -11,16 +11,32 @@
         <div class="nombre">
             <h1>Formulario de contacto</h1>
             <label>Nombre
-                <input type="text" placeholder="Joshua Moll" name="Nombre" required>
+                <input type="text" placeholder="John Doe" name="Nombre" required>
             </label>
         </div>
         <div class="email" >
             <label>Email
-                <input type="email" placeholder="example@gmail.com" autocomplete="new-password" name="Email" required>
+                <input type="email" placeholder="example@example.com" autocomplete="new-password" name="Email" required>
             </label>
         </div>
         <div>
-            <label>PQRS
+        <label>PQRS
+            <select name="Eleccion-PQRS">
+                <option value="peticion">Peticion</option>
+                <option value="queja">Queja</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="sugerencia">Sugerencia</option>
+            </select>
+        <label>Rerefente
+            <input list="referente" placeholder="Tipo de usuario" name="referente" required>
+            <datalist id="referente">
+                <option value="Una empresa">Me refirio una empresa de TI</option>
+                <option value="Un amigo">Me refirio un amigo/a</option>
+                <option value="Josue Molina">El programador mas insano</option>
+            </datalist>
+        </label>
+        </label>
+            <label>Mensaje
                 <textarea class="textarea" placeholder="Descripcion de asunto..." name="PQRS" required></textarea>
             </label>
         </div>
@@ -29,4 +45,4 @@
         </div>
     </form> 
 </body>
-</html>
+</html> 
