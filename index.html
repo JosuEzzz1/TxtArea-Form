@@ -8,38 +8,45 @@
 </head>
 <body>
     <form action="https://formspree.io/f/xjkgeqwy" method="POST">
-        <div class="nombre">
-            <h1>Formulario de contacto</h1>
-            <label>Nombre
-                <input type="text" placeholder="John Doe" name="Nombre" required>
-            </label>
-        </div>
-        <div class="email" >
-            <label>Email
-                <input type="email" placeholder="example@example.com" autocomplete="new-password" name="Email" required>
-            </label>
-        </div>
-        <div>
-        <label>PQRS
-            <select name="Eleccion-PQRS">
-                <option value="peticion">Peticion</option>
-                <option value="queja">Queja</option>
-                <option value="reclamo">Reclamo</option>
-                <option value="sugerencia">Sugerencia</option>
-            </select>
-        <label>Rerefente
-            <input list="referente" placeholder="Tipo de usuario" name="referente" required>
-            <datalist id="referente">
-                <option value="Una empresa">Me refirio una empresa de TI</option>
-                <option value="Un amigo">Me refirio un amigo/a</option>
-                <option value="Josue Molina">El programador mas insano</option>
-            </datalist>
-        </label>
-        </label>
-            <label>Mensaje
-                <textarea class="textarea" placeholder="Descripcion de asunto..." name="PQRS" required></textarea>
-            </label>
-        </div>
+        <h1>Formulario de contacto</h1>
+            <fieldset>
+                <legend>Informacion basica</legend>
+                <div class="nombre">
+                    <label>Nombre
+                        <input type="text" placeholder="John Doe" name="Nombre" required>
+                    </label>
+                </div>
+                <div class="email" >
+                    <label>Email
+                        <input type="email" placeholder="example@example.com" autocomplete="new-password" name="Email" required>
+                    </label>
+                </div>
+            
+            <div>
+                <label>Rerefente
+                    <input list="referente" placeholder="Tipo de usuario" name="referente" required>
+                    <datalist id="referente">
+                        <option value="Una empresa">Me refirio una empresa de TI</option>
+                        <option value="Un amigo">Me refirio un amigo/a</option>
+                        <option value="Josue Molina">El programador mas insano</option>
+                    </datalist>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Solicitud</legend>
+                <label>PQRS
+                    <select name="Eleccion-PQRS">
+                        <option value="peticion">Peticion</option>
+                        <option value="queja">Queja</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+
+                    <label>Mensaje
+                        <textarea class="textarea" placeholder="Descripcion de asunto..." name="PQRS" required></textarea>
+                    </label>
+                </div>
+            </fieldset>
         <div>
             <input type="submit" value="ENVIAR" class="botonEnviar">
         </div>
